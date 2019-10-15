@@ -4,6 +4,7 @@ import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
 class PangramTest {
+    private val Pangram = Pangram()
 
     @Test
     fun emptySentence() {
