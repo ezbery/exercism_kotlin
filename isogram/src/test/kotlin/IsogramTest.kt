@@ -22,6 +22,8 @@ class IsogramTest(val input: String, val expectedOutput: Boolean) {
         )
     }
 
+    private val Isogram = Isogram()
+
     @Test
     fun test() {
         assertEquals(expectedOutput, Isogram.isIsogram(input))
