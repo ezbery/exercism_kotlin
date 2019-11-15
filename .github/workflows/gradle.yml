@@ -13,5 +13,5 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build with Gradle
-      run: ./gradlew test
+    - name: Build Hello World with Gradle
+      run: cd hello-world && chmod +x ./gradlew && ./gradlew test
