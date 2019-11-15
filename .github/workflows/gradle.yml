@@ -16,16 +16,16 @@ jobs:
     - name: Diamond
       run: cd diamond && chmod +x ./gradlew && ./gradlew test
     - name: Hamming
-      run: cd ../hamming && chmod +x ./gradlew && ./gradlew test
+      run: cd hamming && chmod +x ./gradlew && ./gradlew test
     - name: Hello World
-      run: cd ../hello-world && chmod +x ./gradlew && ./gradlew test
+      run: cd hello-world && chmod +x ./gradlew && ./gradlew test
     - name: Isogram
-      run: cd ../isogram && chmod +x ./gradlew && ./gradlew test
+      run: cd isogram && chmod +x ./gradlew && ./gradlew test
     - name: Pangram
-      run: cd ../pangram && chmod +x ./gradlew && ./gradlew test
+      run: cd pangram && chmod +x ./gradlew && ./gradlew test
     - name: Raindrops
-      run: cd ../raindrops && chmod +x ./gradlew && ./gradlew test
+      run: cd raindrops && chmod +x ./gradlew && ./gradlew test
     - name: Reverse-string
-      run: cd ../reverse-string && chmod +x ./gradlew && ./gradlew test
+      run: cd reverse-string && chmod +x ./gradlew && ./gradlew test
     - name: Two-fer
-      run: cd ../two-fer && chmod +x ./gradlew && ./gradlew test
+      run: cd two-fer && chmod +x ./gradlew && ./gradlew test
