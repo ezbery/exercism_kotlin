@@ -5,7 +5,7 @@ class PigLatin {
     private val specialConsonants = listOf("ch", "qu", "th", "rh", "thr", "sch")
     private val pigLatinEnding = "ay"
 
-    fun translate(input: String): String {
+    private fun translateWord(input: String): String {
         return when {
             input.take(2) in specialVowels -> input
             input.first() in vowels -> input
@@ -19,4 +19,6 @@ class PigLatin {
             else -> ""
         } + pigLatinEnding
     }
+
+    fun translate(input: String): String = input.split(" ").joinToString(" ") { translateWord(it) }
 }
