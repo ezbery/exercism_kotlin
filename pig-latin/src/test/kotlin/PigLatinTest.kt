@@ -64,6 +64,7 @@ class PigLatinTest(val input: String, val expectedOutput: String) {
         )
     }
 
+    val PigLatin = PigLatin()
     @Test
     fun test() {
         assertEquals(expectedOutput, PigLatin.translate(input))
