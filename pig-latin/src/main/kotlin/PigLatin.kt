@@ -9,13 +9,10 @@ class PigLatin {
         return when {
             input.take(2) in specialVowels -> input
             input.first() in vowels -> input
-            input.first() in consonants ->
-                when {
-                    input.take(3).drop(1) == "qu" -> input.drop(3) + input.take(3)
-                    input.take(3) in specialConsonants -> input.drop(3) + input.take(3)
-                    input.take(2) in specialConsonants -> input.drop(2) + input.take(2)
-                    else -> input.drop(1) + input.take(1)
-                }
+            input.take(3).drop(1) == "qu" -> input.drop(3) + input.take(3)
+            input.take(3) in specialConsonants -> input.drop(3) + input.take(3)
+            input.take(2) in specialConsonants -> input.drop(2) + input.take(2)
+            input.first() in consonants -> input.drop(1) + input.take(1)
             else -> ""
         } + pigLatinEnding
     }
