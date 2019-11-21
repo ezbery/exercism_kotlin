@@ -8,13 +8,12 @@ object ScrabbleScore {
             Pair(listOf('J', 'X'), 8),
             Pair(listOf('Q', 'Z'), 10))
 
-    private fun scoreLetter(c: Char): Int {
-        lettersScore.map {
-            if (c.toUpperCase() in it.key)
-                return it.value
+    private fun scoreLetter(c: Char): Int = lettersScore.map {
+        when (c.toUpperCase()) {
+            in it.key -> it.value
+            else -> 0
         }
-        return 0
-    }
+    }.sum()
 
     fun scoreWord(word: String): Int = word.map { scoreLetter(it) }.sum()
 }
