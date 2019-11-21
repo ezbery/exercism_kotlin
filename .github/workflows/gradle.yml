@@ -25,6 +25,8 @@ jobs:
       run: cd isogram && chmod +x ./gradlew && ./gradlew test
     - name: Pangram
       run: cd pangram && chmod +x ./gradlew && ./gradlew test
+    - name: Pig-latin
+      run: cd pig-latin && chmod +x ./gradlew && ./gradlew test
     - name: Raindrops
       run: cd raindrops && chmod +x ./gradlew && ./gradlew test
     - name: Reverse-string
