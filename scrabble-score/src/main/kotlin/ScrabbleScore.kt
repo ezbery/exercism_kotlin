@@ -16,5 +16,5 @@ object ScrabbleScore {
         }
     }.sum()
 
-    fun scoreWord(word: String): Int = word.map { scoreLetter(it) }.sum()
+    fun scoreWord(word: String): Int = word.sumBy { scoreLetter(it) }
 }
