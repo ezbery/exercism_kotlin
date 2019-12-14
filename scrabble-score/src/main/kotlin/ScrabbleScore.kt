@@ -1,12 +1,13 @@
 object ScrabbleScore {
     private val lettersScore = mapOf(
-            Pair(listOf('A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'), 1),
-            Pair(listOf('D', 'G'), 2),
-            Pair(listOf('B', 'C', 'M', 'P'), 3),
-            Pair(listOf('F', 'H', 'V', 'W', 'Y'), 4),
-            Pair(listOf('K'), 5),
-            Pair(listOf('J', 'X'), 8),
-            Pair(listOf('Q', 'Z'), 10))
+        listOf('A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T') to 1,
+        listOf('D', 'G') to 2,
+        listOf('B', 'C', 'M', 'P') to 3,
+        listOf('F', 'H', 'V', 'W', 'Y') to 4,
+        listOf('K') to 5,
+        listOf('J', 'X') to 8,
+        listOf('Q', 'Z') to 10
+    )
 
     private fun scoreLetter(c: Char): Int = lettersScore.map {
         when (c.toUpperCase()) {
