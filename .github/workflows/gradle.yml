@@ -31,5 +31,7 @@ jobs:
       run: cd raindrops && chmod +x ./gradlew && ./gradlew test
     - name: Reverse-string
       run: cd reverse-string && chmod +x ./gradlew && ./gradlew test
+    - name: Scrabble-score
+      run: cd scrabble-score && chmod +x ./gradlew && ./gradlew test
     - name: Two-fer
       run: cd two-fer && chmod +x ./gradlew && ./gradlew test
