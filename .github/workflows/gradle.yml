@@ -14,24 +14,24 @@ jobs:
       with:
         java-version: 1.8
     - name: Diamond
-      run: cd diamond && chmod +x ./gradlew && ./gradlew test
+      run: cd kotlin/diamond && chmod +x ./gradlew && ./gradlew test
     - name: Gigasecond
-      run: cd gigasecond && chmod +x ./gradlew && ./gradlew test
+      run: cd kotlin/gigasecond && chmod +x ./gradlew && ./gradlew test
     - name: Hamming
-      run: cd hamming && chmod +x ./gradlew && ./gradlew test
+      run: cd kotlin/hamming && chmod +x ./gradlew && ./gradlew test
     - name: Hello World
-      run: cd hello-world && chmod +x ./gradlew && ./gradlew test
+      run: cd kotlin/hello-world && chmod +x ./gradlew && ./gradlew test
     - name: Isogram
-      run: cd isogram && chmod +x ./gradlew && ./gradlew test
+      run: cd kotlin/isogram && chmod +x ./gradlew && ./gradlew test
     - name: Pangram
-      run: cd pangram && chmod +x ./gradlew && ./gradlew test
+      run: cd kotlin/pangram && chmod +x ./gradlew && ./gradlew test
     - name: Pig-latin
-      run: cd pig-latin && chmod +x ./gradlew && ./gradlew test
+      run: cd kotlin/pig-latin && chmod +x ./gradlew && ./gradlew test
     - name: Raindrops
-      run: cd raindrops && chmod +x ./gradlew && ./gradlew test
+      run: cd kotlin/raindrops && chmod +x ./gradlew && ./gradlew test
     - name: Reverse-string
-      run: cd reverse-string && chmod +x ./gradlew && ./gradlew test
+      run: cd kotlin/reverse-string && chmod +x ./gradlew && ./gradlew test
     - name: Scrabble-score
-      run: cd scrabble-score && chmod +x ./gradlew && ./gradlew test
+      run: cd kotlin/scrabble-score && chmod +x ./gradlew && ./gradlew test
     - name: Two-fer
-      run: cd two-fer && chmod +x ./gradlew && ./gradlew test
+      run: cd kotlin/two-fer && chmod +x ./gradlew && ./gradlew test
