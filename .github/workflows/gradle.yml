@@ -23,6 +23,8 @@ jobs:
       run: cd kotlin/hello-world && chmod +x ./gradlew && ./gradlew test
     - name: Isogram
       run: cd kotlin/isogram && chmod +x ./gradlew && ./gradlew test
+    - name: Leap
+      run: cd kotlin/leap && chmod +x ./gradlew && ./gradlew test
     - name: Pangram
       run: cd kotlin/pangram && chmod +x ./gradlew && ./gradlew test
     - name: Pig-latin
